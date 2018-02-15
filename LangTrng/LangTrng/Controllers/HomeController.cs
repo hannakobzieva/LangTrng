@@ -29,6 +29,13 @@ namespace LangTrng.Controllers
             return View();
         }
 
+        public IActionResult Rules()
+        {
+            ViewData["Message"] = "Rules page.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
